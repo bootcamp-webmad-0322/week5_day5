@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Galería</h1>
+    <hr>
+    <div class="row movies-gallery">
+
+        {{#each movies}}
+        <div class="col-md-3">
+            <figure>
+                <img src="{{cover}}" alt="{{title}}">
+                <figcaption class="mt-2">
+                    <h4>{{title}}</h4>
+                </figcaption>
+            </figure>
+        </div>
+        {{/each}}
+
+    </div>
+    <a href="/peliculas/crear" class="btn  btn-dark">Crear nueva</a>
+</div>

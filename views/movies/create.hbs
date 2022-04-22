@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <h1>Nueva película</h1>
+            <hr>
+            <form action="/peliculas/crear" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="title" name="title">
+                </div>
+
+                <div class="mb-3">
+                    <label for="cover" class="form-label">Carátula</label>
+                    <input class="form-control" type="file" id="cover" name="movieCoverFile">
+                </div>
+
+                <button type="submit" class="btn btn-dark">Crear película</button>
+            </form>
+        </div>
+    </div>
+</div>
